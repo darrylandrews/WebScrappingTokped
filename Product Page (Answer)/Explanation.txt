@@ -1,0 +1,37 @@
+ANSWER:
+
+The product.py program takes in a product page url and extracts several key data, such as:
+	- Product Name
+	- Seller
+	- Main Category
+	- Sub Category
+	- Category
+	- Price
+	- Sold
+	- Rating
+	- Total Rating
+	- Link
+
+Example user input: 'https://www.tokopedia.com/ptpratamasemesta/iphone-13-garansi-resmi-128gb-biru?extParam=ivf%3Dfalse&src=topads'
+
+The extracted data are then appended into the product.csv file and product.json file. 
+Each time a user enters a product page, the csv and json file will be updated as well.
+
+Several Libraries used:
+	- Selenium (must be ver.4 and above)
+	- BeautifulSoup44
+	- Pandas
+
+Before running the program, there are several things that must be updated:
+	1. chromedriver
+		=> download chromedriver based on the user's current google chrome version 
+		=> to check google chrome version (Settings > About Chrome > Version) 
+		=> the chrome driver in the folder is ver. 103.0.5060.134
+		=> download link: https://chromedriver.chromium.org/downloads
+
+	2. User-agent
+		=> to update the user-agent please open the product.py file in any python code editor and change the use-agent manually
+		=> the code is on the very top of the code at opsi.add_argument("user-agent = <Enter user-agent>")
+		=> check user agent at: https://www.whatismybrowser.com/detect/what-is-my-user-agent/
+
+Thank you.

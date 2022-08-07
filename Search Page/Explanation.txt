@@ -1,0 +1,34 @@
+ALTERNATE ANSWER:
+
+The tokopedia.py program takes in a product name or category and extracts several key data from 80 search result, such as:
+	- Product Name
+	- Seller
+	- Location
+	- Price
+	- Sold
+	- Rating
+	- Link
+
+Example of user input: 'Iphone 13' or 'Buku Kimia'
+
+The extracted data are then dumped into the csv and json folder. 
+Each time a user enters a product name or category, a new csv and json file will be made in their respective folders.
+
+Several Libraries used:
+	- Selenium (must be ver.4 and above)
+	- BeautifulSoup44
+	- Pandas
+
+Before running the program, there are several things that must be updated:
+	1. chromedriver
+		=> download chromedriver based on the user's current google chrome version 
+		=> to check google chrome version (Settings > About Chrome > Version) 
+		=> the chrome driver in the folder is ver. 103.0.5060.134
+		=> download link: https://chromedriver.chromium.org/downloads
+
+	2. User-agent
+		=> to update the user-agent please open the product.py file in any python code editor and change the use-agent manually
+		=> the code is on the very top of the code at opsi.add_argument("user-agent = <Enter user-agent>")
+		=> check user agent at: https://www.whatismybrowser.com/detect/what-is-my-user-agent/
+
+Thank you.
